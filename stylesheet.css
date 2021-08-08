@@ -19,6 +19,7 @@ a {
 .ttl {
   font-size: 30px;
   margin-bottom: 20px;
+  letter-spacing: 5px;
 }
 
 .body {
@@ -69,7 +70,7 @@ a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 25vh;
-  padding: 20px;
+  padding-bottom: 20px;
 }
 
 .header .header-ttl {
@@ -352,7 +353,6 @@ a {
 }
 
 .about {
-  padding: 50px;
   background-color: #b9b9b9;
 }
 
@@ -369,8 +369,9 @@ a {
 .about .about-img {
   -o-object-fit: contain;
      object-fit: contain;
-  width: 50%;
-  height: 500px;
+  height: 60vh;
+  border-radius: 10%;
+  margin-top: -50px;
 }
 
 .about .about-parts {
@@ -386,6 +387,11 @@ a {
 
 .name .name-txt {
   font-size: 10px;
+  margin-left: 10px;
+}
+
+.birth {
+  margin-left: 10px;
 }
 
 .contact {

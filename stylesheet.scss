@@ -20,6 +20,7 @@ a {
 .ttl {
   font-size: 30px;
   margin-bottom: 20px;
+  letter-spacing: 5px;
 }
 
 .body {
@@ -61,7 +62,7 @@ a {
   display: flex;
   justify-content: space-around;
   height: 25vh;
-  padding: 20px;
+  padding-bottom: 20px;
   .header-ttl {
     font-size: 30px;
     align-self: center;
@@ -325,7 +326,6 @@ a {
 // about
 
 .about {
-  padding: 50px;
   background-color: #b9b9b9;
   .about-body {
     display: flex;
@@ -335,9 +335,9 @@ a {
   }
   .about-img {
     object-fit: contain;
-    width: 50%;
-    height: 500px;
-    // border-radius: 50%;
+    height: 60vh;
+    border-radius: 10%;
+    margin-top: -50px;
   }
   .about-parts {
     line-height: 2.5;
@@ -351,7 +351,12 @@ a {
   letter-spacing: 3px;
   .name-txt {
     font-size: 10px;
+    margin-left: 10px;
   }
+}
+
+.birth {
+  margin-left: 10px;
 }
 
 //contact
