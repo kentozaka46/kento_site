@@ -59,37 +59,55 @@ a {
 
 .header {
   display: flex;
-  position: relative;
-  height: 100vh;
+  justify-content: space-around;
+  height: 25vh;
+  padding: 20px;
   .header-ttl {
-    font-size: 60px;
-    position: absolute;
-    color: white;
-    line-height: 0.8;
-    top: 50%;
-    left: 50%;
-    letter-spacing: 2px;
-  }
-  .header-span {
-    font-size: 20px;
-  }
-  .header-img {
-    width: 100%;
+    font-size: 30px;
+    align-self: center;
   }
   .header-nav {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    line-height: 3;
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-  }
-  .header-nav-list:hover {
-    opacity: 0.5;
+    display: flex;
+    align-items: flex-end;
+    .header-nav-list {
+      margin-right: 20px;
+    }
   }
 }
+
+// .header {
+//   display: flex;
+//   position: relative;
+//   height: 100vh;
+//   .header-ttl {
+//     font-size: 60px;
+//     position: absolute;
+//     color: white;
+//     line-height: 0.8;
+//     top: 50%;
+//     left: 50%;
+//     letter-spacing: 2px;
+//   }
+//   .header-span {
+//     font-size: 20px;
+//   }
+//   .header-img {
+//     width: 100%;
+//   }
+//   .header-nav {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     line-height: 3;
+//     font-weight: bold;
+//     font-size: 30px;
+//     text-align: center;
+//   }
+//   .header-nav-list:hover {
+//     opacity: 0.5;
+//   }
+// }
 
 .nav {
   position: relative;
@@ -192,6 +210,11 @@ a {
 
 .none {
   display: none;
+}
+
+.main-img {
+  height: 50vh;
+  object-fit: cover;
 }
 
 // service
@@ -303,7 +326,7 @@ a {
 
 .about {
   padding: 50px;
-  background-color: khaki;
+  background-color: #b9b9b9;
   .about-body {
     display: flex;
     width: 80%;
