@@ -63,6 +63,7 @@ a {
   justify-content: space-around;
   height: 25vh;
   padding-bottom: 20px;
+  background-color: #f5f5f5;
   .header-ttl {
     font-size: 30px;
     align-self: center;
@@ -227,19 +228,28 @@ a {
   margin: 0 auto;
   padding: 50px 0;
   text-align: center;
+  .service-ttl {
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+    .sevice-ttl-txt {
+      line-height: 2;
+    }
+  }
   .service-body {
     width: 80%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     line-height: 2;
     margin: auto;
     margin-top: 40px;
   }
   .service-parts {
     padding: 20px;
-    width: 25%;
+    width: 28%;
     box-shadow: 0 0 8px gray;
     background-color: white;
+    border-radius: 20px;
   }
   .service-body-ttl {
     font-size: 25px;
@@ -300,20 +310,29 @@ a {
     margin: 0 auto;
   }
   .skill-top {
-    width: 30%;
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+    .skill-top-txt {
+      line-height: 2;
+    }
   }
   .skill-content {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 40px;
     line-height: 2;
-    justify-content: center;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 40px;
   }
   .skill-parts {
-    width: 40%;
+    width: 150px;
+    height: 150px;
     background-color: white;
     box-shadow: 0 0 8px gray;
-    margin: 10px;
+    margin: 20px;
+    border-radius: 50%;
     .skill-ttl {
       font-size: 25px;
     }
@@ -329,15 +348,16 @@ a {
   background-color: #b9b9b9;
   .about-body {
     display: flex;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .about-img {
     object-fit: contain;
     height: 60vh;
     border-radius: 10%;
     margin-top: -50px;
+    box-shadow: 3px 3px 3px #464646;
   }
   .about-parts {
     line-height: 2.5;
@@ -372,6 +392,12 @@ a {
     width: 30%;
     color: #464646;
     padding-top: 10%;
+  }
+  .contact-ttl {
+    color: white;
+  }
+  .contact-sub-ttl {
+    font-size: 15px;
   }
   .form {
     line-height: 2.5;
