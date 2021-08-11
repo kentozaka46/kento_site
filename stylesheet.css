@@ -296,29 +296,73 @@ a {
 .work {
   width: 100%;
   margin: 0;
-  padding: 20px 0;
-  background-color: khaki;
+  background-color: #f5f5f5;
 }
 
-.work .body {
-  width: 80%;
+.work .work-img-body {
+  position: relative;
 }
 
-.work .work-body {
+.work .work-img {
+  height: 45vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+}
+
+.work .work-top {
+  position: absolute;
+  top: 25%;
+  right: 20%;
+  text-align: right;
+}
+
+.work .work-top .work-ttl-txt {
+  color: white;
+  line-height: 2;
+}
+
+.work-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 40px;
+  margin-top: -30px;
+  margin-bottom: 50px;
 }
 
-.work .work-parts {
+.work-body .work-parts {
+  position: relative;
   width: 30%;
+  -webkit-box-shadow: 0 0 8px gray;
+          box-shadow: 0 0 8px gray;
+  border-radius: 20px;
+  z-index: 2;
 }
 
-.work .work-parts a:hover {
+.work-body .work-parts a:hover {
   opacity: 0.7;
+}
+
+.work-body .work-parts .work-parts-img {
+  border-radius: 20px;
+  height: 45vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.work-body .work-parts .work-ttl {
+  position: absolute;
+  color: white;
+  bottom: 0px;
+  background-color: rgba(185, 185, 185, 0.7);
+  width: 100%;
+  height: 5vh;
+  padding-top: 10px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
 }
 
 .skill {
