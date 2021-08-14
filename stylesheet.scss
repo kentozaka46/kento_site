@@ -219,6 +219,43 @@ a {
   object-fit: cover;
 }
 
+// about
+
+.about {
+  background-color: #b9b9b9;
+  .about-body {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .about-img {
+    object-fit: contain;
+    height: 60vh;
+    border-radius: 10%;
+    margin-top: -50px;
+    box-shadow: 3px 3px 3px #464646;
+  }
+  .about-parts {
+    line-height: 2.5;
+    padding: 50px 0;
+    text-align: left;
+  }
+}
+
+.name {
+  font-size: 25px;
+  letter-spacing: 3px;
+  .name-txt {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+}
+
+.birth {
+  margin-left: 10px;
+}
+
 // service
 
 .service {
@@ -232,8 +269,10 @@ a {
     width: 80%;
     text-align: left;
     margin: 0 auto;
+    margin-top: 30px;
     .sevice-ttl-txt {
       line-height: 2;
+      margin-bottom: 50px;
     }
   }
   .service-body {
@@ -242,7 +281,7 @@ a {
     justify-content: space-between;
     line-height: 2;
     margin: auto;
-    margin-top: 40px;
+    margin-bottom: 30px;
   }
   .service-parts {
     padding: 20px;
@@ -306,10 +345,13 @@ a {
 .work-body {
   display: flex;
   justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
   margin-top: -30px;
   margin-bottom: 50px;
   .work-parts {
     position: relative;
+    margin: 20px;
     width: 30%;
     box-shadow: 0 0 8px gray;
     border-radius: 20px;
@@ -329,10 +371,10 @@ a {
       background-color: rgba(185, 185, 185, 0.7);
       width: 100%;
       height: 5vh;
-      padding-top: 10px;
+      padding-top: 15px;
       border-bottom-right-radius: 20px;
       border-bottom-left-radius: 20px;
-      overflow: hidden;
+      text-align: center;
     }
   }
 }
@@ -360,61 +402,25 @@ a {
     flex-wrap: wrap;
     line-height: 2;
     justify-content: space-between;
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     margin-top: 40px;
   }
   .skill-parts {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     background-color: white;
     box-shadow: 0 0 8px gray;
     margin: 20px;
     border-radius: 50%;
     .skill-ttl {
       font-size: 25px;
+      margin-top: 15%;
     }
     .star {
       color: orange;
     }
   }
-}
-
-// about
-
-.about {
-  background-color: #b9b9b9;
-  .about-body {
-    display: flex;
-    width: 70%;
-    margin: 0 auto;
-    justify-content: space-between;
-  }
-  .about-img {
-    object-fit: contain;
-    height: 60vh;
-    border-radius: 10%;
-    margin-top: -50px;
-    box-shadow: 3px 3px 3px #464646;
-  }
-  .about-parts {
-    line-height: 2.5;
-    padding: 50px 0;
-    text-align: left;
-  }
-}
-
-.name {
-  font-size: 25px;
-  letter-spacing: 3px;
-  .name-txt {
-    font-size: 10px;
-    margin-left: 10px;
-  }
-}
-
-.birth {
-  margin-left: 10px;
 }
 
 //contact
@@ -429,7 +435,7 @@ a {
     font-size: 30px;
     width: 30%;
     color: #464646;
-    padding-top: 10%;
+    margin: auto 0;
   }
   .contact-ttl {
     color: white;
@@ -440,28 +446,37 @@ a {
   .form {
     line-height: 2.5;
     width: 50%;
-    .form-ttl {
-      margin-top: 20px;
+    .form-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      .form-ttl {
+        width: 20%;
+        margin-top: 20px;
+        margin-right: 10px;
+        .mark {
+          background-color: red;
+          color: white;
+          padding: 5px;
+        }
+      }
+      .input {
+        width: 90%;
+      }
+      .textarea {
+        width: 90%;
+      }
     }
-    .input {
-      width: 90%;
-    }
-  }
-  .mark {
-    background-color: red;
-    color: white;
-    margin-right: 10px;
-    padding: 5px;
-  }
-  .submit {
-    cursor: pointer;
-    font-size: 20px;
-    background-color: khaki;
-    border: none;
-    border-radius: 10px;
-    padding: 5px 30px;
-    &:hover {
-      opacity: 0.7;
+    .submit {
+      cursor: pointer;
+      font-size: 20px;
+      background-color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 5px 30px;
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
 }
@@ -473,9 +488,9 @@ a {
   background-color: #dbdbdb;
   padding-top: 30px;
   border-top: 1px solid #dcdcdc;
-  .footer-ttl {
-    font-weight: bold;
-  }
+  // .footer-ttl {
+  //   font-weight: bold;
+  // }
   .footer-nav {
     display: flex;
     justify-content: center;
@@ -492,7 +507,7 @@ a {
   .check {
     margin-top: 20px;
     font-size: 20px;
-    color: orange;
+    color: white;
   }
 }
 
@@ -522,7 +537,7 @@ a {
 #back-to-top {
   width: 50px;
   height: 50px;
-  background: #ff8c00;
+  background: #464646;
   cursor: pointer;
   position: fixed;
   right: 50px;
